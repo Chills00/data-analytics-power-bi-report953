@@ -28,7 +28,7 @@ The report will present a high-level business summary tailored for C-suite execu
 ### The Dataset
 With operations spanning across different regions, the company has accumulated large amounts of sales from disparate sources over the years. The data contains 120,000 records divided across 4 files which requires extraction from Azure Storage and Azure SQL Database accounts. 
 
-### Data Extraction
+### Data Extraction 
 1. Orders Table  
 The orders table was extracted from an Azure SQL Database and imported into Power BI. Power Query Editor was used to delete customer sensitive information (e.g. credit card numbers), remove null values, and split date and time columns. 
 1. Products Table  
@@ -37,6 +37,47 @@ The products table was extracted from a csv file. Transformation steps included,
 The stores table was extracted from an Azure Blob Storage container. Transformation steps included, renaming of columns to ensure clarity and consistency across the report.
 1. Customers Table  
 The customers table was created by combining data across 3 csv files. Transformation steps included, removal of index columns, inserting a new column which concatenated the first name and last name of each customer. 
+
+### Data Model
+1. Date Table  
+    - Continuous date table created covering entire time period of the dataset.
+    - DAX formulas used to add columns for:
+        - ``` Day of Week = WEEKDAY(Dates[Date], 2) ```
+        - ``` Month Number = MONTH(Dates[Date]) ```
+        - ``` Month Name = FORMAT(Dates[Date], "mmm") ```
+        - ``` Quarter = QUARTER(Dates[Date]) ```
+        - ``` Year = YEAR(Dates[Date]) ```
+        - ``` Start of Year = STARTOFYEAR(Dates[Date]) ```
+        - ``` Start of Quarter = STARTOFQUARTER(Dates[Date]) ```
+        - ``` Start of Month = STARTOFMONTH(Dates[Date]) ```
+        - ``` Start of Week = Dates[Date] - WEEKDAY(Dates[Date], 2) + 1 ```
+2. Data Model  
+    - Star Schema Data Model built by assigning appropraite relationships between the tables.
+    - Representation of the model:
+<p align="center">
+    <img src="https://github.com/Chills00/data-analytics-power-bi-report953/blob/main/ModelSchema.PNG" width="400" />
+</p>
+
+3. Measures Table  
+    - Power Query Editor used to generate measures table containing key measures:
+        - ``` Total Orders = COUNT(Orders[Order Date]) ```
+        - ``` Total Revenue = SUMX(Orders, Orders[Product Quantity] * RELATED(Products[Sale Price])) ```
+        - ``` Total Profit = SUMX(Orders, (RELATED(Products[Sale Price]) - RELATED(Products[Cost Price])) * Orders[Product Quantity]) ```
+        - ``` Total Customers = DISTINCTCOUNT(Orders[User ID]) ```
+        - ``` Total Quantity = SUM(Orders[Product Quantity]) ```
+        - ``` Profit YTD = TOTALYTD(SUMX(Orders, (RELATED(Products[Sale Price]) - RELATED(Products[Cost Price])) * Orders[Product Quantity]), Dates[Date]) ```
+        - ``` Revenue YTD = TOTALYTD(SUMX(Orders, Orders[Product Quantity] * RELATED(Products[Sale Price])), Dates[Date]) ```
+4. Hierarchies
+    - Date hierarchy created enabling user to drill down into data by filtering by:
+        - Start of Year
+        - Start of Quarter
+        - Start of Month
+        - Start of Week
+        - Date
+    - Geography hierarchy created enabling user to drill down into data by filtering by:
+        - World Region (category: Continent)
+        - Country (category: Country)
+        - Country Region (category: State or Province)
 
 ### Analysis
 A 
