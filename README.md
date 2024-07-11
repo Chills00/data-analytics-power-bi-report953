@@ -55,7 +55,7 @@ The customers table was created by combining data across 3 csv files. Transforma
     - Star Schema Data Model built by assigning appropraite relationships between the tables.
     - Representation of the model:
 <p align="center">
-    <img src="https://github.com/Chills00/data-analytics-power-bi-report953/blob/main/ModelSchema.PNG" width="400" />
+    <img src="https://github.com/Chills00/data-analytics-power-bi-report953/blob/main/ModelSchema.PNG" width="500" />
 </p>
 
 3. Measures Table  
@@ -78,6 +78,20 @@ The customers table was created by combining data across 3 csv files. Transforma
         - World Region (category: Continent)
         - Country (category: Country)
         - Country Region (category: State or Province)
+
+### The Report
+1. Customer Detail Page  
+This report page focuses on customer-level analysis. It contains the following visuals:
+    - Card visuals for total distinct customers and revenue per customer.
+    - A line chart of weekly distinct customers. Chart includes trendline and forecasts the next 10 periods based on a 95% confidence limit.
+    - A table displaying the top 20 customers by total revenue, including the revenue per customer and total orders per customer.
+    - A set of three card visuals displaying the name, revenue and total number of orders for the top customer by revenue.
+    - A donut chart showing the number of customers by country, and a bar chart showing the number of customers by product category. 
+    - A slicer to set the date period.
+An example of the report page is:
+<p align="center">
+    <img src="https://github.com/Chills00/data-analytics-power-bi-report953/blob/main/CustomerDetails.PNG" width="500" />
+</p>
 
 ### Analysis
 A 
