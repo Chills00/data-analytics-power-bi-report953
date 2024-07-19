@@ -79,19 +79,33 @@ The customers table was created by combining data across 3 csv files. Transforma
         - Country (category: Country)
         - Country Region (category: State or Province)
 
-### The Report
-1. Customer Detail Page  
+### The Report  
+1. Executive Summary Page
+This report page provides an overview of the company's performance as a whole, enabling senior stakeholders to quickly obtain insights and check outcomes against key targets. It contains the following visuals:
+    - Card visuals for total revenue, total profit and total orders.
+    - A line chart of revenue against time. The chart includes a trendline and forecasts the next 10 periods based on a 95% confidence limit.
+    - Two donut charts showing revenue by country and revenue by store type. 
+    - A bar chart of orders by product category.
+    - Three KPI's for quarterly revenue, orders and profit. 
+    - A table of the top 10 products based on revenue.  
+An example of the report page is:
+<p align="center">
+    <img src="https://github.com/Chills00/data-analytics-power-bi-report953/blob/main/ExecSummary.PNG" width="500" />
+</p>
+
+2. Customer Detail Page  
 This report page focuses on customer-level analysis. It contains the following visuals:
     - Card visuals for total distinct customers and revenue per customer.
     - A line chart of weekly distinct customers. Chart includes trendline and forecasts the next 10 periods based on a 95% confidence limit.
     - A table displaying the top 20 customers by total revenue, including the revenue per customer and total orders per customer.
     - A set of three card visuals displaying the name, revenue and total number of orders for the top customer by revenue.
     - A donut chart showing the number of customers by country, and a bar chart showing the number of customers by product category. 
-    - A slicer to set the date period.
+    - A slicer to set the date period.  
 An example of the report page is:
 <p align="center">
     <img src="https://github.com/Chills00/data-analytics-power-bi-report953/blob/main/CustomerDetails.PNG" width="500" />
 </p>
+
 
 ### Analysis
 A 
