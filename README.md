@@ -15,6 +15,9 @@ This Power BI project was part of AiCore's training for their Data Analysis cour
 ## Table of Contents
 1. [Description](#description)
 1. [Introduction](#introduction)
+    - [The Dataset](#the-dataset)
+    - [Data Model](#data-model)
+    - [The Report](#the-report)
 1. [Installation](#installation)
 1. [File structure](#file-structure)
 1. [Usage](#usage)
