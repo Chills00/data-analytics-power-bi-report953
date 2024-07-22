@@ -123,15 +123,23 @@ An example page to demonstrate the slicer bookmark:
     <img src="https://github.com/Chills00/data-analytics-power-bi-report953/blob/main/ProductDetailsSlicer.PNG" width="500" />
 </p>
 
+4. Stores Map Page  
+This report page enables the store performance to be visualised. The profitability of each store, country region, country or world region can be assessed. The page contains the following visuals and features:
+    - A map visual showing the profit YTD against a geography hierarchy that allows the data to be drilldowned based on location. 
+    - A slicer that allows the user to filter by country. 
+    - A tooltip page to highlight the profit and target of any selected store. 
+The stores map page looks like this:
+<p align="center">
+    <img src="https://github.com/Chills00/data-analytics-power-bi-report953/blob/main/StoresMap.PNG" width="500" />
+</p>  
 
-### Analysis
-A 
+5. Stores Map Drillthrough Page
+    - A stores drillthrough page that enables the user to analyse key insights for any given store. These include a guage displaying the YTD profit and target, YTD revenue and target, bar chart showing total orders by product category and a table of top 5 products by revenue. 
+An example of the drillthrough page is:
+<p align="center">
+    <img src="https://github.com/Chills00/data-analytics-power-bi-report953/blob/main/StoresMapDrillthrough.PNG" width="500" />
+</p>  
 
-The project is split across 4 key milestones:
-1. Setting up the environment. 
-1. Importing and transforming data.
-1. 
-1. 
 
 ![section_break](https://github.com/Chills00/exploratory-data-analysis---online-shopping-in-retail917/blob/main/rainbow.png)
 
