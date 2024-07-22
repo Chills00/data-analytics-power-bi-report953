@@ -106,6 +106,23 @@ An example of the report page is:
     <img src="https://github.com/Chills00/data-analytics-power-bi-report953/blob/main/CustomerDetails.PNG" width="500" />
 </p>
 
+3. Product Details Page  
+This report page highlights the key insights on product performance. It contains the following visuals and features:
+    - A slicer toolbar to filter by Product Category and Country.
+    - Card visuals to display current filter selection.
+    - Guage visuals showing how the selected categories revenue, orders and profit are performing against a quarterly target. 
+    - An area chart displaying the relative revenue performance of each product category over time. 
+    - A table showing the top 10 products by revenue for the selected filters, and card visuals showing the top product by revenue and orders. 
+    - A scatter graph displaying the quantity ordered against profit per item for the products in the current context.  
+An example of the report page is:
+<p align="center">
+    <img src="https://github.com/Chills00/data-analytics-power-bi-report953/blob/main/ProductDetails.PNG" width="500" />
+</p>
+An example page to demonstrate the slicer bookmark:
+<p align="center">
+    <img src="https://github.com/Chills00/data-analytics-power-bi-report953/blob/main/ProductDetailsSlicer.PNG" width="500" />
+</p>
+
 
 ### Analysis
 A 
