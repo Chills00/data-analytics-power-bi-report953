@@ -133,7 +133,7 @@ This report page enables the store performance to be visualised. The profitabili
     - A tooltip page to highlight the profit and target of any selected store. 
 The stores map page looks like this:
 <p align="center">
-    <img src="https://github.com/Chills00/data-analytics-power-bi-report953/blob/main/StoresMap.PNG" width="500" />
+    <img src="https://github.com/Chills00/data-analytics-power-bi-report953/blob/main/StoresMap.png" width="500" />
 </p>  
 
 5. Stores Map Drillthrough Page
