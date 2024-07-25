@@ -143,6 +143,13 @@ An example of the drillthrough page is:
     <img src="https://github.com/Chills00/data-analytics-power-bi-report953/blob/main/StoresMapDrillthrough.PNG" width="500" />
 </p>  
 
+6. Cross-filtering and Navigation
+    - To simplify the user experience the cross-filtering was fixed on each page. Where appropriate, cross-highlighting, cross-filtering or no filtering was set to each visual. 
+    - A navigation bar was set up to enable quick transition between the pages. This included applying a coloured variant of the image to highlight the page on hovering of the mouse.  
+The navigation bar can be seen on the left and an example of how the filters were turned off for the Top 10 Products by Revenue table can be seen on the below image:
+<p align="center">
+    <img src="https://github.com/Chills00/data-analytics-power-bi-report953/blob/main/FilteringNavigation.PNG" width="500" />
+</p>  
 
 ![section_break](https://github.com/Chills00/exploratory-data-analysis---online-shopping-in-retail917/blob/main/rainbow.png)
 
@@ -151,12 +158,6 @@ An example of the drillthrough page is:
     ```
     git clone https://github.com/Chills00/data-analytics-power-bi-report953.git
     ```  
-
-1. Using a CLI install conda environment on your local machine:
-    ```
-    conda env create -f environment.yaml 
-    ```  
-
 
 Note: Database access limited to those with login credentials.
 
