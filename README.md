@@ -58,7 +58,7 @@ The customers table was created by combining data across 3 csv files. Transforma
     - Star Schema Data Model built by assigning appropraite relationships between the tables.
     - Representation of the model:
 <p align="center">
-    <img src="https://github.com/Chills00/data-analytics-power-bi-report953/blob/main/ModelSchema.PNG" width="500" />
+    <img src="https://github.com/Chills00/data-analytics-power-bi-report953/blob/main/PowerBIReport/Screenshots/ModelSchema.PNG" width="500" />
 </p>
 
 3. Measures Table  
@@ -93,7 +93,7 @@ This report page provides an overview of the company's performance as a whole, e
     - A table of the top 10 products based on revenue.  
 An example of the report page is:
 <p align="center">
-    <img src="https://github.com/Chills00/data-analytics-power-bi-report953/blob/main/ExecSummary.PNG" width="500" />
+    <img src="https://github.com/Chills00/data-analytics-power-bi-report953/blob/main/PowerBIReport/Screenshots/ExecSummary.PNG" width="500" />
 </p>
 
 2. Customer Detail Page  
@@ -106,7 +106,7 @@ This report page focuses on customer-level analysis. It contains the following v
     - A slicer to set the date period.  
 An example of the report page is:
 <p align="center">
-    <img src="https://github.com/Chills00/data-analytics-power-bi-report953/blob/main/CustomerDetails.PNG" width="500" />
+    <img src="https://github.com/Chills00/data-analytics-power-bi-report953/blob/main/PowerBIReport/Screenshots/CustomerDetails.PNG" width="500" />
 </p>
 
 3. Product Details Page  
@@ -119,11 +119,11 @@ This report page highlights the key insights on product performance. It contains
     - A scatter graph displaying the quantity ordered against profit per item for the products in the current context.  
 An example of the report page is:
 <p align="center">
-    <img src="https://github.com/Chills00/data-analytics-power-bi-report953/blob/main/ProductDetails.PNG" width="500" />
+    <img src="https://github.com/Chills00/data-analytics-power-bi-report953/blob/main/PowerBIReport/Screenshots/ProductDetails.PNG" width="500" />
 </p>
 An example page to demonstrate the slicer bookmark:
 <p align="center">
-    <img src="https://github.com/Chills00/data-analytics-power-bi-report953/blob/main/ProductDetailsSlicer.PNG" width="500" />
+    <img src="https://github.com/Chills00/data-analytics-power-bi-report953/blob/main/PowerBIReport/Screenshots/ProductDetailsSlicer.PNG" width="500" />
 </p>
 
 4. Stores Map Page  
@@ -133,14 +133,14 @@ This report page enables the store performance to be visualised. The profitabili
     - A tooltip page to highlight the profit and target of any selected store. 
 The stores map page looks like this:
 <p align="center">
-    <img src="https://github.com/Chills00/data-analytics-power-bi-report953/blob/main/StoresMap.png" width="500" />
+    <img src="https://github.com/Chills00/data-analytics-power-bi-report953/blob/main/PowerBIReport/Screenshots/StoresMap.png" width="500" />
 </p>  
 
 5. Stores Map Drillthrough Page
     - A stores drillthrough page that enables the user to analyse key insights for any given store. These include a guage displaying the YTD profit and target, YTD revenue and target, bar chart showing total orders by product category and a table of top 5 products by revenue. 
 An example of the drillthrough page is:
 <p align="center">
-    <img src="https://github.com/Chills00/data-analytics-power-bi-report953/blob/main/StoresMapDrillthrough.PNG" width="500" />
+    <img src="https://github.com/Chills00/data-analytics-power-bi-report953/blob/main/PowerBIReport/Screenshots/StoresMapDrillthrough.PNG" width="500" />
 </p>  
 
 6. Cross-filtering and Navigation
@@ -148,7 +148,7 @@ An example of the drillthrough page is:
     - A navigation bar was set up to enable quick transition between the pages. This included applying a coloured variant of the image to highlight the page on hovering of the mouse.  
 The navigation bar can be seen on the left and an example of how the filters were turned off for the Top 10 Products by Revenue table can be seen on the below image:
 <p align="center">
-    <img src="https://github.com/Chills00/data-analytics-power-bi-report953/blob/main/FilteringNavigation.PNG" width="500" />
+    <img src="https://github.com/Chills00/data-analytics-power-bi-report953/blob/main/PowerBIReport/Screenshots/FilteringNavigation.PNG" width="500" />
 </p>  
 
 ![section_break](https://github.com/Chills00/exploratory-data-analysis---online-shopping-in-retail917/blob/main/rainbow.png)
