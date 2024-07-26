@@ -1,0 +1,1 @@
+SELECT * FROM store_type_sales_a;

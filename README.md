@@ -14,18 +14,18 @@ This Power BI project was part of AiCore's training for their Data Analysis cour
 
 ## Table of Contents
 1. [Description](#description)
-1. [Introduction](#introduction)
+1. [DA and Reporting](#data-analysis-and-reporting)
     - [The Dataset](#the-dataset)
     - [Data Model](#data-model)
-    - [The Report](#the-report)
+    - [The Report](#the-report)  
+1. [SQL Queries](#sql-queries)
 1. [Installation](#installation)
 1. [File structure](#file-structure)
-1. [Usage](#usage)
 1. [Licence](#licence)
 
 ![section_break](https://github.com/Chills00/exploratory-data-analysis---online-shopping-in-retail917/blob/main/rainbow.png)
 
-## Introduction
+## Data Analysis and Reporting
 The report will present a high-level business summary tailored for C-suite executives, providing insights into their highest value customers segmented by sales region. It will also provide a detailed analysis of top-performing products categorised by type against their sales targets, and a map visual that spotlights the performance metrics of their retail outlets across different territories.
 
 ### The Dataset
@@ -153,6 +153,18 @@ The navigation bar can be seen on the left and an example of how the filters wer
 
 ![section_break](https://github.com/Chills00/exploratory-data-analysis---online-shopping-in-retail917/blob/main/rainbow.png)
 
+### SQL Queries
+It is common to encounter clients who do not have access to specialist visualisation tools like Power BI. To ensure that the data insights can still be extracted and shared SQL will be used to query the data. 
+1. The ```orders_db_info``` folder contains information on the database, including the names of the tables in the database, and a .csv file for each table containing a list of column names.
+1. The ```SQL_queries``` folder contains a .sql file and a .csv file with the query and results to 5 questions. The questions are:
+    1. How many staff are there in all of the UK stores?
+    1. Which month in 2022 had the highest revenue?
+    1. Which German store type had the highest revenue in 2022?
+    1. Create a view where the rows are the store types and the columns are the total sales, percentage of total sales and the count of orders.
+    1. Which product category generated the most profit for the "Wiltshire, UK" region in 2021?
+
+![section_break](https://github.com/Chills00/exploratory-data-analysis---online-shopping-in-retail917/blob/main/rainbow.png)
+
 ## Installation
 1. Clone repo:
     ```
@@ -164,13 +176,53 @@ Note: Database access limited to those with login credentials.
 ![section_break](https://github.com/Chills00/exploratory-data-analysis---online-shopping-in-retail917/blob/main/rainbow.png)
 
 ## File structure
-
-
-
-![section_break](https://github.com/Chills00/exploratory-data-analysis---online-shopping-in-retail917/blob/main/rainbow.png)
-
-## Usage
-
+AICoreBIProject  
+├── csv_files  
+│   ├── Customers  
+│   │   ├── Users_Germany.csv  
+│   │   ├── Users_United_Kingdom.csv  
+│   │   └── Users_USA.csv  
+│   └── Products.csv  
+├── Screenshots  
+│   ├── CustomerDetails.PNG  
+│   ├── ExecSummary.PNG  
+│   ├── FilteringNavigation.PNG  
+│   ├── ModelSchema.PNG  
+│   ├── ProductDetails.PNG  
+│   ├── ProductDetailsSlicer.PNG  
+│   ├── StoresMap.png  
+│   └── StoresMapDrillthrough.PNG  
+└── BI_International_Retailer.pbix  
+├── orders_db_info  
+│   ├── country_region_columns.csv  
+│   ├── dim_customer_columns.csv  
+│   ├── dim_date_columns.csv  
+│   ├── dim_product_columns.csv  
+│   ├── dim_store_columns.csv  
+│   ├── forquerying2_columns.csv  
+│   ├── forview_columns.csv  
+│   ├── my_store_overviews_2_columns.csv  
+│   ├── my_store_overviews_columns.csv  
+│   ├── my_store_overviewsnew_columns.csv  
+│   ├── new_store_overview_columns.csv  
+│   ├── orders_columns.csv  
+│   ├── store_summary_table_columns.csv  
+│   ├── TableNames.csv  
+│   ├── test_columns.csv  
+│   ├── test_store_overviews_2_columns.csv  
+│   └── test_store_overviews_columns.csv  
+└── SQL_queries  
+    ├── powerbi_sales.session.sql  
+    ├── question_1.csv  
+    ├── question_1.sql  
+    ├── question_2.csv  
+    ├── question_2.sql  
+    ├── question_3.csv  
+    ├── question_3.sql  
+    ├── question_4.csv  
+    ├── question_4.sql  
+    ├── question_5.csv  
+    └── question_5.sql  
 
 ![section_break](https://github.com/Chills00/exploratory-data-analysis---online-shopping-in-retail917/blob/main/rainbow.png)
 
